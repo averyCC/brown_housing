@@ -1,0 +1,748 @@
+body {
+	background-color: #fcfaf4;
+}
+
+
+@font-face {
+font-family: "gobold";
+src:url("Gobold Regular.ttf");
+}
+@font-face {
+font-family: "claire";
+src:url("ClaireHandLight.otf");
+}
+@font-face {
+font-family: "dd";
+src:url("Demo_Delinquente.ttf");
+}
+@font-face {
+font-family: "ft";
+src:url("FriztonTattoo.ttf");
+}
+
+#enter {
+  background: url('enter2.jpg') no-repeat center, center, fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 200px 0 200px 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#enter #text {
+	height: 50px;
+	margin-top: -70px;
+	color: #fcfaf4;
+	margin-left: 23%;
+	/*margin-left: 300px;*/
+	text-align: left;
+	font-family: "gobold", helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px; 
+	text-shadow: 2px 2px #990000;
+}
+
+#enter h1 {
+	font-size: 60px;
+	line-height: 70px;
+}
+
+#enter h2{
+	margin-top: -35px;
+	font-size: 18px;
+}
+
+#top {
+	background-image: url("top.png");
+	width: 100%;
+	height: 100px;
+	background-repeat: repeat-x;
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 810px;
+}
+
+#bottom {
+	background-color: #fcfaf4;
+	position: relative;
+	height: 300px;
+	width: 100%;
+	display: block;
+	top: 900px;
+	left: -10px;
+	padding-top: 200px;
+	padding-left: 18px;
+	padding-bottom: 800px;
+	font-family: "gobold", helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 20px;
+	color : #888387;
+}
+
+#year_wrapper{
+	position: relative;
+	width: 360px;
+	height: 250px;
+	margin: auto;
+}
+
+#bottom p{
+	width: 160px;
+	margin: auto;
+}
+#year1 {
+	font-family: "claire";
+	font-size: 32px;
+	font-weight: bolder;
+	padding-top: 10px;
+}
+#year2 {
+	font-family: "dd";
+	text-transform: none;
+	font-size: 32px;
+	margin-top: -20px;
+	padding: 10px 0 10px 0;
+}
+#year3{
+	font-family: "ft";
+	font-size: 98px;
+	margin-top: -20px;
+}
+
+#year_person{
+	position: absolute;
+	left: 15px;
+	top: -65px;
+	margin-right: 10px;
+}
+
+
+#bottom .active {
+	color: #aa2f28;
+}
+
+#bottom .option:hover {
+	color: black;
+}
+
+#roommates{
+	position: absolute;
+	width: 100%;
+	height: 1100px;
+	background-color: #decbc7;
+	background-image: url("gate.jpg");
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	top: 1800px;
+	left: 0;
+}
+
+#roommates #inner{
+	/*background-image: url("roommates.png");*/
+	background-color: #fcfaf4;
+	border: 4px solid black;
+	height: 700px;
+	width: 50%;
+	position: relative;
+	top: 270px;
+	margin: auto;
+}
+
+#roommates #inner p{
+	position: relative;
+	top: 45px;
+	width: 100%;
+	font-family: "gobold", helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 25px;
+	color: #aa2f28;
+	text-align: center;
+}
+
+#triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 100px solid #4c474b;
+	position: relative;
+	top: 40px;
+	margin: auto;
+}
+
+#triangle-up:hover {
+	border-bottom: 100px solid black;
+}
+
+#triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 100px solid #4c474b;
+	position: relative;
+	top: 50px;
+	margin: auto;
+}
+
+#triangle-down:hover {
+	border-top: 100px solid black;
+}
+
+#roommateList{
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+    list-style-type: none;
+    position: relative;
+    top: 80px;
+}
+
+#roommates #inner li{
+	background-image: url("person.png");
+	width: 57px;
+	height: 150px;
+	display: inline-block;
+	background-size: contain;
+}
+
+#map_wrapper{
+	width: 100%;
+	position: absolute;
+	top: 2900px;
+	left: 0;
+	overflow: auto;
+}
+#map{
+	width: 1600px;
+	height: 1130px;
+	background-size: 1600px;
+	background-image: url("map.png");
+}
+
+.location{
+	position: absolute;
+	background-color: black;
+	width: 40px;
+	height: 40px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	display: none;
+}
+
+.label{
+	font-family: "gobold", helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	position: absolute;
+	text-align: center;
+	display: none;
+}
+
+#none{
+	width: 500px;
+	height: 90px;
+	background-color: rgba(0,0,0,0.8);
+	color: #fcfaf4;
+	font-family: "gobold", helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 42px;
+	text-align: center;
+	position: relative;
+	margin: auto;
+	top: 330px;
+	padding-top: 50px;
+	line-height: 20px;
+	display: none;
+}
+
+#none span{
+	font-size: 10px;
+	letter-spacing: 4px;
+}
+
+#map_barbour{
+	left: 1140px;
+	top: 860px;
+}
+
+#label_barbour{
+	left: 1095px;
+	top: 905px;
+	transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+}
+
+#barbour{
+	background-image: url("dorms/barbour1.jpg");
+}
+
+#map_chapin{
+	left: 750px;
+	top: 680px;
+}
+
+#label_chapin{
+	left: 700px;
+	top: 680px;
+	transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+}
+
+#chapin{
+	background-image: url("dorms/chapin.jpg");
+}
+
+#map_diman{
+	left: 535px;
+	top: 700px;
+}
+
+#label_diman{
+	left: 590px;
+	top: 722px;
+}
+
+#diman{
+	background-image: url("dorms/diman.jpg");
+}
+
+#map_goddard{
+	left: 590px;
+	top: 800px;
+}
+
+#label_goddard{
+	left: 535px;
+	top: 840px;
+}
+
+#goddard{
+	background-image: url("dorms/goddard.jpg");
+}
+
+#map_harkness{
+	left: 740px;
+	top: 850px;
+}
+
+#label_harkness{
+	left: 640px;
+	top: 845px;
+	transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+}
+
+#harkness{
+	background-image: url("dorms/harkness.jpg");
+}
+
+#map_hope{
+	left: 115px;
+	top: 160px;
+}
+
+#label_hope{
+	left: 155px;
+	top: 195px;
+}
+
+#hope{
+	background-image: url("dorms/hope.jpg");
+}
+
+#map_littlefield{
+	left: 450px;
+	top: 430px;
+}
+
+#label_littlefield{
+	left: 387px;
+	top: 405px;
+	transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+	font-size: 10px;
+}
+
+#littlefield{
+	background-image: url("dorms/littlefield.jpg");
+}
+
+#map_caswell{
+	left: 710px;
+	top: 310px;
+}
+
+#label_caswell{
+	left: 660px;
+	top: 300px;
+	transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+}
+
+#caswell{
+	background-image: url("dorms/caswell.jpg");
+}
+
+#map_minden{
+	left: 1040px;
+	top: 50px;
+}
+
+#label_minden{
+	left: 1087px;
+	top: 85px;
+	transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+}
+
+#minden{
+	background-image: url("dorms/minden1.jpg");
+}
+
+#map_olney {
+	left: 470px;
+	top: 640px;
+}
+
+#label_olney{
+	left: 385px;
+	top: 695px;
+}
+
+#olney{
+	background-image: url("dorms/olney.jpg");
+}
+
+#map_perkins{
+	left: 1495px;
+	top: 905px;
+}
+
+#label_perkins{
+	left: 1475px;
+	top: 960px;
+}
+
+#perkins{
+	background-image: url("dorms/perkins1.jpg");
+}
+
+#map_sears{
+	top: 535px;
+	left: 550px;
+}
+
+#label_sears{
+	top: 565px;
+	left: 465px;
+	transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+}
+
+#sears{
+	background-image: url("dorms/sears.jpg");
+}
+
+#map_grada{
+	left: 655px;
+	top: 1050px;
+}
+
+#label_grada{
+	left: 575px;
+	top: 1065px;
+}
+
+#grada{
+	background-image: url("dorms/gradA.jpg");
+}
+
+#map_gradb{
+	left: 650px;
+	top: 950px;
+}
+
+#label_gradb{
+	left: 580px;
+	top: 940px;
+}
+
+#gradb{
+	background-image: url("dorms/gradB.jpg");
+}
+
+#map_gradc{
+	left: 770px;
+	top: 1060px;
+}
+
+#label_gradc{
+	left: 700px;
+	top: 1065px;
+}
+
+#gradc{
+	background-image: url("dorms/gradC.jpg");
+}
+
+#map_gradd{
+	left: 775px;
+	top: 950px;
+}
+
+#label_gradd{
+	left: 700px;
+	top: 956px;
+}
+
+#gradd{
+	background-image: url("dorms/gradD.jpg");
+}
+
+#map_gregoriana{
+	left: 945px;
+	top: 950px;
+}
+
+#label_gregoriana{
+	left: 870px;
+	top: 955px;
+	transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+}
+
+#gregoriana{
+	background-image: url("dorms/newDormA.jpg");
+}
+
+#map_gregorianb{
+	left: 840px;
+	top: 1000px;
+}
+
+#label_gregorianb{
+	left: 886px;
+	top: 1040px;
+	transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+	font-size: 10px;
+}
+
+#gregorianb{
+	background-image: url("dorms/newDormB2.jpg");
+}
+
+#map_hegeman{
+	left: 715px;
+	top: 420px;
+}
+
+#label_hegeman{
+	left: 712px;
+	top: 390px;
+	transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+}
+
+#hegeman{
+	background-image: url("dorms/hegeman4.jpg");
+}
+
+#map_slater{
+	left: 115px;
+	top: 400px;
+}
+
+#label_slater{
+	left: 165px;
+	top: 405px;
+}
+
+#slater{
+	background-image: url("dorms/slater.jpg");
+}
+
+#map_youngorchard{
+	left: 1470px;
+	top: 820px;
+}
+
+#label_youngorchard{
+	left: 1350px;
+	top: 890px;
+	width: 300px;
+	transform:rotate(-4deg);
+	-ms-transform:rotate(-4deg);
+	-webkit-transform:rotate(-4deg);
+}
+
+#youngorchard{
+	background-image: url("dorms/youngOrchard2.jpg");
+}
+
+#back{
+	position: fixed;
+	left: 50px;
+	top: 50px;
+	background-color: rgba(0,0,0,0.6);
+	width: 155px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-family: "gobold", helvetica, sans-serif;
+	letter-spacing: 2px;
+	color: #fcfaf4;
+	font-weight: 200;
+	border-radius: 10px;
+	display: none;
+}
+
+#back:hover{
+	background-color: black;
+}
+
+#allDorms{
+	width: 100%;
+	min-height: 5px;
+	height: 100%;
+	position: absolute;
+	top: 4012px;
+	left: 0;
+	padding: 0;
+    list-style-type: none;
+}
+
+#allDorms li{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border: 1px solid black;
+	display: none;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+#nav {
+	position: fixed;
+	height: 100px;
+	width: 15px;
+	right: 50px;
+	top: 50px;
+	z-index: 2;
+	padding: 0;
+	list-style-type: none;
+}
+
+#nav li{
+	width: 10px;
+	height: 10px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background-color: rgba(252,250,244,0.5);
+	border: 1px double black;
+	margin: 10px auto 10px auto;
+}
+
+#nav li:hover{
+	background-color: rgb(252,250,244);
+}
+
+.info{
+	width: 500px;
+	height: auto;
+	padding: 20px 10px 40px 10px;
+	top: 20%;
+	position: relative;
+	margin: auto;
+	border-radius: 20%;
+	background-color: rgba(0,0,0,0.8);
+	color: #fcfaf4;
+	text-align: center;
+	font-family: helvetica, sans-serif;
+	font-weight: thin;
+	letter-spacing: 3px;
+}
+
+.info h1{
+	letter-spacing: 5px;
+	font-size: 50px;
+	text-transform: lowercase;
+	font-family: "gobold";
+}
+
+.info p {
+	margin-top: -20px;
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 15px;
+}
+
+.info span{
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: none;
+}
+
+
+@media (max-width: 480px) {
+  #enter h1{
+  	font-size: 40px;
+  	line-height: 50px;
+  }
+  #enter h2{
+  	margin-top: -25px;
+  	font-size: 12px;
+  }
+ #roommates #inner p{
+  	font-size: 15px;
+  }
+
+}
+
+@media (max-width: 570px){
+ #roommates #inner li{
+  	width: 35px;
+	height: 93px;
+  }
+  .info {
+  	width: 200px;
+  }
+  .info h1{
+  	font-size: 15px;
+  }
+  .info p{
+  	font-size: 6px;
+  	margin-top: 10px;
+  }
+  .info span{
+  	font-size: 8px;
+  	line-height: 8px;
+  }
+}

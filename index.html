@@ -1,0 +1,320 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+	<title>Housing</title>
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src ="javascript.js"></script>
+</head>
+<body>
+	<ul id="nav">
+		<li id="nav_enter"></li>
+		<li id="nav_bottom"></li>
+		<li id="nav_inner"></li>
+		<li id="nav_map"></li>
+	</ul>
+	<div id = "enter" data-type="background" data-speed="10">
+		<div id = "text">
+			<h1> Brown <br> University</h1>
+			<h2> Office of Residential Life </h2>
+		</div>
+	</div>
+	<div id = "year">
+		<div id ="top"></div>
+		<div id ="bottom">
+			<div id="year_wrapper">
+				<img src ="fresh.png" id="year_person"></img>
+				<p>You are a...</p>
+				<p id = "year1" class ="active option">Freshman</p>
+				<p id = "year2" class = "option">Sophmore</p>
+				<p id = "year3" class = "option">Junior</p>
+			</div>
+		</div>
+	</div>
+	<div id = "roommates">
+		<div id ="inner">
+			<div id="triangle-up"></div>
+			<p> # of Roommates</p>
+			<div id="triangle-down"></div>
+			<ul id ="roommateList">
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div id="map_wrapper">
+
+	<div id = "map">
+
+		<div id="none">No options found!<br><span>Please select a different number of roommates. <span> </div>
+
+		<div id = "map_barbour" class="location"></div>
+		<div id = "label_barbour" class="label">Barbour<br>Hall</div>
+
+		<div id = "map_chapin" class="location"></div>
+		<div id = "label_chapin" class="label">Chapin<br>House</div>
+
+		<div id = "map_diman" class="location"></div>
+		<div id = "label_diman" class="label">Diman<br>House</div>
+
+		<div id = "map_goddard" class="location"></div>
+		<div id = "label_goddard" class="label">Goddard<br>House</div>
+
+		<div id = "map_harkness" class="location"></div>
+		<div id = "label_harkness" class="label">Harkness House</div>
+
+		<div id = "map_hope" class="location"></div>
+		<div id = "label_hope" class="label">Hope<br>College</div>
+
+		<div id = "map_littlefield" class="location"></div>
+		<div id = "label_littlefield" class="label">Littlefield<br>Hall</div>
+
+		<div id = "map_caswell" class="location"></div>
+		<div id = "label_caswell" class="label">Caswell<br>Hall</div>
+
+		<div id = "map_minden" class="location"></div>
+		<div id = "label_minden" class="label">Minden Hall</div>
+
+		<div id = "map_olney" class="location"></div>
+		<div id = "label_olney" class="label">Olney House</div>
+
+		<div id = "map_perkins" class="location"></div>
+		<div id = "label_perkins" class="label">Perkins<br>Hall</div>
+
+		<div id = "map_sears" class="location"></div>
+		<div id = "label_sears" class="label">Sears House</div>
+
+		<div id = "map_grada" class="location"></div>
+		<div id = "label_grada" class="label">Grad<br>Center<br>A</div>
+
+		<div id = "map_gradb" class="location"></div>
+		<div id = "label_gradb" class="label">Grad<br>Center<br>B</div>
+
+		<div id = "map_gradc" class="location"></div>
+		<div id = "label_gradc" class="label">Grad<br>Center<br>C</div>
+
+		<div id = "map_gradd" class="location"></div>
+		<div id = "label_gradd" class="label">Grad<br>Center<br>D</div>
+
+		<div id = "map_gregoriana" class="location"></div>
+		<div id = "label_gregoriana" class="label">Gregorian<br>Quad A</div>
+
+		<div id = "map_gregorianb" class="location"></div>
+		<div id = "label_gregorianb" class="label">Gregorian<br>Quad B</div>
+
+		<div id = "map_hegeman" class="location"></div>
+		<div id = "label_hegeman" class="label">Hegeman<br>Hall</div>
+
+		<div id = "map_slater" class="location"></div>
+		<div id = "label_slater" class="label">Slater<br>Hall</div>
+
+		<div id = "map_youngorchard" class="location"></div>
+		<div id = "label_youngorchard" class="label">Young Orchard Apartments</div>
+	</div></div>
+	<ul id="allDorms">
+ 		<li id = "olney">
+			<div class="info">
+				<h1>Olney House</h1>
+				<p><span>Home to Sigma Chi Fraternity <br> and Delta Tau Fraternity.</span>
+				<br>
+				<br>3 kitchens, 5 lounges
+				<br>8 doubles and 6 singles available to sophmores</p>
+			</div>
+		</li>
+		<li id = "minden">
+			<div class="info">
+				<h1>Miden Hall</h1>
+				<p><span>A rennovated hotel, <br> Miden houses all classes.
+				<br>Rooms are organized in suites, each with a private bathroom.</span>
+				<br>
+				<br>1 kitchen and ground floor lounge
+				<br>17 doubles, 20 triples, and 6 quads <br> available to sophmores
+				<br>7 singles, 3 doubles, and 2 triples <br> available to juniors and seniors</p>
+			</div>
+		</li>
+		<li id = "littlefield">
+			<div class="info">
+				<h1>Littlefield Hall</h1>
+				<p><span>Sophmore designated housing.</span>
+				<br>
+				<br>1 kitchen, 3 lounges
+				<br>26 doubles available to sophmores</p>
+			</div>
+		</li>
+		<li id = "caswell">
+			<div class="info">
+				<h1>Caswell Hall</h1>
+				<p><span>Sophmore designated housing.
+				<br>Split into the North, Middle, and South Halls, which connect through the basement.</span>
+				<br>
+				<br>1 kitchen per section,<br> 1 shared basement lounge
+				<br>42 doubles available to sophmores</p>
+			</div>
+		</li>
+		<li id = "hegeman">
+			<div class="info">
+				<h1>Hegeman Hall</h1>
+				<p><span>Split into 5 sections: <br> A, B, C, D, and E. <br> B through E are connected through the basement. 
+				Mostly triples - 3 single bedrooms sharing a small living room.</span>
+				<br>
+				<br>2 kitchens, 1 lounge
+				<br>3 singles, 6 doubles, and 30 triples <br>available to juniors and seniors</p>
+			</div>
+		</li>
+
+		<li id = "sears">
+			<div class="info">
+				<h1>Sears House</h1>
+				<p><span>Home to Alpha Chi Omega Sorority <br> and Phi Kappa Psi Fraternity.</span>
+				<br>
+				<br>2 kitchens, 5 lounges
+				<br>3 singles, 9 doubles, and 2 7-person apartment suites available to sophmores</p>
+			</div>
+		</li>
+		<li id = "harkness">
+			<div class="info">
+				<h1>Harkness House</h1>
+				<p><span>Home to the Technology House.</span>
+				<br>
+				<br>3 kitchens, 5 lounges
+				<br>5 singles, 3 doubles, 1 7-person apartment suite, <br> and 1 8-person apartment suite available to sophmores</p>
+			</div>
+		</li>
+		<li id = "chapin">
+			<div class="info">
+				<h1>Chapin House</h1>
+				<p><span>Home to Theta Delta Chi Fraternity <br>and the Harambee House.</span>
+				<br>
+				<br>3 kitchens, 5 lounges
+				<br>11 singles, 9 doubles, and 1 5-person apartment suite available to sophmores</p>
+			</div>
+		</li>
+		<li id = "hope">
+			<div class="info">
+				<h1>Hope College</h1>
+				<p><span>Built in 1822, Hope is the oldest residence hall. Sophmore designated housing.</span>
+				<br>
+				<br>2 kitchens, 1 lounges
+				<br>9 singles and 26 doubles available to sophmores</p>
+			</div>
+		</li>
+
+		<li id = "barbour">
+			<div class="info">
+				<h1>Barbour Hall</h1>
+				<p><span>Mostly apartment suites, each with it's own living room, kitchen, and bathroom. The suites are organized in doubles and singles.</span>
+				<br>
+				<br>kitchens in each suite, 1 lounge
+				<br>2 singles, 10 doubles, 8 3-person apartment suites, <br> 18 4-person apartment suites, and 5 5-person apartment suites available to sophmores</p>
+			</div>
+		</li>
+		<li id = "slater">
+			<div class="info">
+				<h1>Slater Hall</h1>
+				<p><span>Mostly apartment suites, each with it's own living room, kitchen, and bathroom. The suites are organized in doubles and singles.</span>
+				<br>
+				<br>kitchens in each suite, 1 lounge
+				<br>2 singles, 10 doubles, 8 3-person apartment suites, <br> 18 4-person apartment suites, and 5 5-person apartment suites available to juniors and seniors</p>
+			</div>
+		</li>
+		<li id = "diman">
+			<div class="info">
+				<h1>Diman House</h1>
+				<p><span>Home to Kappa Alpha Theta Sorority.</span>
+				<br>
+				<br>3 kitchens, 5 lounges
+				<br>2 singles, 6 doubles, 4 triples <br> and 2 8-person apartment suites available to sophmores</p>
+			</div>
+		</li>
+		<li id = "perkins">
+			<div class="info">
+				<h1>Perkins Hall</h1>
+				<p><span>Sophmore designated housing.
+				<br>Known for a tight-knit community.</span>
+				<br>
+				<br>4 kitchens, 2 lounges
+				<br>2 singles, 93 doubles available to sophmores</p>
+			</div>
+		</li>
+
+		<li id = "goddard">
+			<div class="info">
+				<h1>Goddard House</h1>
+				<p><span>Home to Alpha Delta Phi <br> and Delta Phi Fraternities.</span>
+				<br>
+				<br>3 kitchens, 5 lounges
+				<br>14 singles, 6 doubles, and 1 6-person apartment suite available to sophmores</p>
+			</div>
+		</li>
+		<li id = "grada">
+			<div class="info">
+				<h1>Graduate Center A</h1>
+				<p><span>Mostly singles organized into suites. 
+				<br> Each suite shares a hallway and bathroom, rooms are carpeted. Quiet housing available.</span>
+				<br>
+				<br>2 kitchens, no lounges
+				<br>33 singles, and 1 4-person apartment suite<br> available to juniors and seniors</p>
+			</div>
+		</li>
+		<li id = "gradb">
+			<div class="info">
+				<h1>Graduate Center B</h1>
+				<p><span>Each suite shares a hallway and bathroom, rooms are carpeted. Quiet housing available.</span>
+				<br>
+				<br>2 kitchens, no lounges
+				<br>2 4-person, 12 5-person, and 7 6-person apartment suites available to juniors and seniors</p>
+			</div>
+		</li>
+		<li id = "gradc">
+			<div class="info">
+				<h1>Graduate Center C</h1>
+				<p><span>Each suite shares a hallway and bathroom, rooms are carpeted. <br> Sub-free housing available (singles).</span>
+				<br>
+				<br>2 kitchens, no lounges
+				<br>4 singles, 13 5-person apartment suites, and 4 6-person apartment suites available to juniors and seniors</p>
+			</div>
+		</li>
+		<li id = "gradd">
+			<div class="info">
+				<h1>Graduate Center D</h1>
+				<p><span>Singles organized into suites. 
+				<br> Each suite shares a hallway and bathroom, rooms are carpeted.</span>
+				<br>
+				<br>2 kitchens, no lounges
+				<br>105 singles available to juniors and seniors</p>
+			</div>
+		</li>
+		<li id = "gregoriana">
+			<div class="info">
+				<h1>Gregorian Quad A</h1>
+				<p><span>Singles, doubles, and carpeted suites organized into single bedrooms that share a living room with sink. </span>
+				<br>
+				<br>3 kitchens, 3 lounges
+				<br>15 singles, 16 doubles, 3 triples, and 22 4-person, 
+				<br> 5 5-person, and 1 8-person apartment suites 
+				<br>available to juniors and seniors</p>
+			</div>
+		</li>
+		<li id = "gregorianb">
+			<div class="info">
+				<h1>Gregorian Quad B</h1>
+				<p><span>Singles, doubles, and carpeted suites organized into single bedrooms that share a living room with sink. </span>
+				<br>
+				<br>4 kitchens, 4 lounges
+				<br>26 singles, 4 doubles, and 21 4-person and 3 5-person apartment suites available to juniors and seniors</p>
+			</div>
+		</li>
+		<li id = "youngorchard">
+			<div class="info">
+				<h1>Young Orchard Apartments</h1>
+				<p><span>3 nearly identical towers. <br> Apartments organized by 4 single bedrooms with a shared living room, kitchen, and bathroom.</span>
+				<br>
+				<br>1 kitchen and 1 lounge in each apartment
+				<br>34 4-person apartment suites <br> available to juniors and seniors</p>
+			</div>
+		</li>
+
+		<div id="back"> back to map</div>
+	</ul>
+</body>
+</html>
